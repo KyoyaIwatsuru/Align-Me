@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <main className="py-32">
       <Image src="/AlignMe.png" alt="logo" width={300} height={300} />
@@ -30,10 +30,9 @@ export default function Home() {
           </svg>
           <input type="password" className="grow" placeholder="Password" />
         </label>
-        <Link href="/start" className="mt-3">
-          <button className="btn btn-primary w-[100%]">Login</button>
+        <Link href="/" className="mt-3">
+          <button className="btn btn-primary w-[100%]">Signup</button>
         </Link>
-        <a href="/signup" className="link text-center">新規ユーザ登録はこちら</a>
       </div>
     </main>
   );
